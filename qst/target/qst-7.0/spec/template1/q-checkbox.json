@@ -1,4 +1,0 @@
-{
-    "view": [{"xtype": "q-checkbox", "name": "check2", "layout":"left", "checked":"checked", "label": "Вы баран?"}]
-   ,"desription": "Это Checkbox его значение true/false"
-}
