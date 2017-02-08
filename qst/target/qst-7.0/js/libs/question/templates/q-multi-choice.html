@@ -1,0 +1,22 @@
+<div class="q-multi-choice row" id="<%= name %>">
+    <div class="col-lg-12 col-md-12">
+    <div class="radchecks">
+        <label><%= label %></label> 
+            <ul>
+                <% _.each( choice, function( item ){ %>
+                <li class="radchecks">
+                    <!--div class="field"-->                     
+                    <% if (typeof(item.layout) !== "undefined" && item.layout==="right") { %>
+                    <label for="<%= item.value %>"><%= item.label %></label>                
+                    <% } %>
+                    <input id="<%= item.value %>" type="checkbox" name="<%= item.value %>" class="<%= name %>" value="<%= item.value %>" <%= item.required %> <%= item.checked %> >
+                    <% if (typeof(item.layout) !== "undefined" && item.layout==="left") { %>
+                        <label for="<%= item.value %>"><%= item.label %></label>                
+                    <% } %>
+                    <!--/div-->
+                </li>
+                <% }); %>    
+            </ul>
+    </div>
+    </div>
+</div>

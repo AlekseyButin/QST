@@ -1,0 +1,10 @@
+
+{
+    "view": [{
+            "xtype": "questionnaire-qtextArea",
+            "name": "comments", 
+            "fieldLabel": "Ф.И.O"
+        }
+    ]
+    ,"desription": "Это кусок поле ввода текствых стрк Вопрос как задать ширину ?"
+}

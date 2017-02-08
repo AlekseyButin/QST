@@ -1,0 +1,53 @@
+{
+   "view":[
+           {"xtype": "q-label","html": "<h1>Ответьте на вопросы</h1><h2>(*)-Обязательные для заполнения</h2>"},
+           {"xtype": "q-label","html": "<B>Краткая информация о Вас</B>"},
+           {"xtype": "q-text", "name": "fio", "value":null, "label":"Ф.И.O *", "placeholder":"Введите полное Ф.И.О", "required":"required"},
+           {"xtype": "q-number", "name":  "age", "value":null, "min":20, "max":100, "maxlength":3, "label": "Возраст *", "placeholder": "Ваш возраст", "required":"required"},
+           {"xtype": "q-checkbox", "name": "check1", "layout":"left", "required":"required", "checked":"checked", "label": "Вы жираф * ?"},
+           {"xtype": "q-checkbox", "name": "check2", "layout":"right", "checked":null, "label": "Вы баран ?"},
+           {"xtype": "q-radio", "name": "gender", "label": "<h1>Пол</h1>","collapsible": false, "required":"required","radio": [
+                {
+                    "parentname":"gender",
+                    "value": "another",
+                    "label": "Другой",
+                    "checked":null
+                },
+                {
+                    "parentname":"gender",
+                    "value": "man",
+                    "label": "Мужской",
+                    "checked":"checked"
+                }, 
+                {
+                    "parentname":"gender",
+                    "value": "woman",
+                    "label": "Женский",
+                    "checked":null
+                }]
+        },
+       {
+            "xtype": "q-multi-choice",
+            "name": "q1",
+            "label": "<h1>Заголовок-multi-choice</h1>",
+            "choice": [
+                {"value": "check-1", "layout":"left", "checked":"checked", "label": "Утомляемость, низкая работоспособность"},
+                {"value": "check-2", "layout":"left", "checked":"checked", "label": "Головная боль"},
+                {"value": "check-3", "layout":"left", "checked":"checked", "label": "Головокружение"},
+                {"value": "check-4", "layout":"left", "checked":"checked", "label": "Расстройства сна (сонливость днём и/или бессонница ночью)"},
+                {"value": "check-5", "layout":"left", "checked":"checked", "label": "Изменени я настроения: раздражительность или подавленность / депрессия"},
+                {"value": "check-6", "layout":"left", "checked":"checked", "label": "Ощущение оглушённости / нарушенного восприятия окружающей обстановки"},
+                {"value": "check-7", "layout":"left", "checked":"checked", "label": "Сердцебиение"},
+                {"value": "check-8", "layout":"left", "checked":null, "label": "Ломота в теле / боли в мышцах / боли в костях / боли в суставах"},
+                {"value": "check-9", "layout":"left", "checked":null, "label": "Повышенная потливость"},
+                {"value": "check-10", "layout":"left", "checked":"checked", "label": "Озноб"},
+                {"value": "check-11", "layout":"left", "checked":"checked", "label": "Жар"},
+                {"value": "check-12", "layout":"left", "checked":"checked", "label": "Изменения температуры тела за последнюю неделю:"},
+                {"value": "check-13", "layout":"left", "checked":"checked", "label": "Снижение аппетита"},
+                {"value": "check-14", "layout":"left", "checked":"checked", "label": "Тошнота"},
+                {"value": "check-15", "layout":"left", "checked":"checked", "label": "Рвота"},
+                {"value": "check-16", "layout":"left", "checked":"checked", "label": "Понос"}
+                ]
+        }
+        ]
+}

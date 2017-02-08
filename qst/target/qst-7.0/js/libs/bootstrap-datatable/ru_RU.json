@@ -1,0 +1,17 @@
+{
+  "sEmptyTable": "В таблице отсутствуют данные",
+  "sInfo": "Показано _START_ - _END_ из _TOTAL_ записей",
+  "sInfoEmpty": "",
+  "sInfoFiltered": "(отсортировано из _MAX_ записей)",
+  "sLengthMenu": "Показать _MENU_ записей",
+  "sLoadingRecords": "Загрузка...",
+  "sProcessing": "Обработка...",
+  "sSearch": "Поиск:",
+  "sZeroRecords": "По вашему запросу ничего не найдено",
+  "oPaginate": {
+    "sFirst": "",
+    "sPrevious": "<i class=\"fa fa-arrow-left\"></i>",
+    "sNext": "<i class=\"fa fa-arrow-right\"></i>",
+    "sLast": ""
+  }
+}
